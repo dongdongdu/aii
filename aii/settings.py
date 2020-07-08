@@ -19,7 +19,7 @@ LOG_FILE = 'log.log'
 # USER_AGENT = 'aii (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -69,8 +69,9 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     # 'aii.pipelines.AiiPipeline': 300,
-
-    'aii.pipelines.AiiFilesPipeline': 1
+    'aii.pipelines.AiiAddSpiderNamePipeline': 501,
+    'aii.pipelines.AiiFilesPipeline': 503
+    
 }
 FILES_STORE = '/Users/ddu/Downloads/imp'
 

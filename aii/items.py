@@ -10,10 +10,11 @@ import scrapy
 
 class AiiItem(scrapy.Item):
     # define the fields for your item here like:
+    spider = scrapy.Field()
+    
     title = scrapy.Field()
     date = scrapy.Field()
     link = scrapy.Field()
 
     file_urls = scrapy.Field()
     file = scrapy.Field()
-  

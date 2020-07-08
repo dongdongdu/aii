@@ -10,6 +10,18 @@ from os.path import join
 import scrapy
 
 
+class AiiAddSpiderNamePipeline(object):
+    def open_spider(self, spider):
+        pass
+
+    def close_spider(self, spider):
+        pass
+
+    def process_item(self, item, spider):
+        item['spider'] = spider.name
+        return item
+
+
 class AiiFilesPipeline(FilesPipeline):
     def get_media_requests(self, item, info):
         for file_url in item['file_urls']:
