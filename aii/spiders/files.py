@@ -46,5 +46,5 @@ class FilesSpider(scrapy.Spider):
         body = response.body
         itm['title'] = Selector(text=body).css('div.news-content h2').xpath('text()').extract()[0]
         itm['file_urls'] = ['http://www.aii-alliance.org/' + \
-                            Selector(text=body).css('div.news-content a').xpath('@href').extract()[0]]
+                            Selector(text=body).css('div.news-content > a').xpath('@href').extract()[0]]
         yield itm
