@@ -97,6 +97,7 @@ class AiiFilesPipeline(FilesPipeline):
 
         # remove special file name characters
 
+        file_name = file_name.replace(":", "")
         file_name = file_name.replace("/", "")
         file_name = file_name.replace("'", "")
         file_name = file_name.replace('"', '')
