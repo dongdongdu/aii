@@ -15,7 +15,7 @@ class FilesSpider(scrapy.Spider):
         # white papers
         page = 2
         for i in range(1, page + 1):
-            url = 'http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=26&page=' + str(i)
+            url = 'http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=' + str(i)
             yield scrapy.Request(url=url, callback=self.parse_list)
 
             # # Publications

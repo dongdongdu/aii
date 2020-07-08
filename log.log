@@ -1,1 +1,536 @@
 
+2020-04-20 10:46:46 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: aii)
+2020-04-20 10:46:46 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.7 (default, Mar 10 2020, 15:43:03) - [Clang 11.0.0 (clang-1100.0.33.17)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-18.7.0-x86_64-i386-64bit
+2020-04-20 10:46:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'aii', 'LOG_FILE': 'log.log', 'NEWSPIDER_MODULE': 'aii.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['aii.spiders']}
+2020-04-20 10:46:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-04-20 10:46:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-04-20 10:46:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-04-20 10:46:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['aii.pipelines.AiiFilesPipeline']
+2020-04-20 10:46:48 [scrapy.core.engine] INFO: Spider opened
+2020-04-20 10:46:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-04-20 10:46:48 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/robots.txt> (referer: None)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2> (referer: None)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4> (referer: None)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3> (referer: None)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1> (referer: None)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=649> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=648> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=640> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=647> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=650> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=825> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=290> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=651> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=4)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=291> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=289> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=807> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=809> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=779> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3)
+2020-04-20 10:46:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=290> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/ddu/Qsync/docs/python-practice/aii/aii/spiders/files.py", line 49, in parse
+    Selector(text=body).css('div.news-content a').xpath('@href').extract()[0]]
+IndexError: list index out of range
+2020-04-20 10:46:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=291> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/ddu/Qsync/docs/python-practice/aii/aii/spiders/files.py", line 49, in parse
+    Selector(text=body).css('div.news-content a').xpath('@href').extract()[0]]
+IndexError: list index out of range
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=653> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=652> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=782> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=781> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=656> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=808> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=1)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=654> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=655> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=3)
+2020-04-20 10:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=780> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2)
+2020-04-20 10:46:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=824> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2)
+2020-04-20 10:46:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=823> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=40&page=2)
+2020-04-20 10:46:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=649&fno=0> (referer: None)
+2020-04-20 10:46:49 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=649&fno=0> referred in <None>
+2020-04-20 10:46:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=649>
+{'date': '2019.05.23',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=649&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=649',
+ 'title': '医疗设备物联网解决方案 ——实现医疗设备管理可视化与智能化'}
+2020-04-20 10:46:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=807&fno=0> (referer: None)
+2020-04-20 10:46:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=807&fno=0> referred in <None>
+2020-04-20 10:46:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=807>
+{'date': '2019.11.05',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=807&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=807',
+ 'title': '石油天然气管道工控系统安全监测与态势感知——保障国家关键基础设施安全'}
+2020-04-20 10:46:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=809&fno=0> (referer: None)
+2020-04-20 10:46:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=809&fno=0> referred in <None>
+2020-04-20 10:46:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=809>
+{'date': '2019.11.05',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=809&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=809',
+ 'title': '可快速部署的低成本多源异构数据采集和可视化解决方案 —— 基于宜科边缘控制器和IoTHub平台的设备智能管理应用'}
+2020-04-20 10:46:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=825&fno=0> (referer: None)
+2020-04-20 10:46:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=825&fno=0> referred in <None>
+2020-04-20 10:46:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=825>
+{'date': '2019.11.08',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=825&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=825',
+ 'title': '智能产线大幅提升生产效能——“伽利略”挑战高原工厂成就技术极限'}
+2020-04-20 10:46:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=779&fno=0> (referer: None)
+2020-04-20 10:46:55 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=779&fno=0> referred in <None>
+2020-04-20 10:46:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=779>
+{'date': '2019.10.18',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=779&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=779',
+ 'title': '西安工业云：SaaS软件订阅模式的实践 ——工业互联网商业模式在运营商的落地实践'}
+2020-04-20 10:46:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=647&fno=0> (referer: None)
+2020-04-20 10:46:56 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=647&fno=0> referred in <None>
+2020-04-20 10:46:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=647>
+{'date': '2019.05.23',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=647&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=647',
+ 'title': '海尔COSMOPlat工业互联网平台 房车行业解决方案 '}
+2020-04-20 10:47:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=648&fno=0> (referer: None)
+2020-04-20 10:47:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=648&fno=0> referred in <None>
+2020-04-20 10:47:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=648>
+{'date': '2019.05.23',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=648&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=648',
+ 'title': 'AIdustry工业互联网项目 ——华能集团携手太极股份联合打造流程型行业工业互联网平台'}
+2020-04-20 10:47:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=652&fno=0> (referer: None)
+2020-04-20 10:47:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=652&fno=0> referred in <None>
+2020-04-20 10:47:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=652>
+{'date': '2019.05.24',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=652&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=652',
+ 'title': '汉云工业互联网平台在新能源物流行业的应用项目 ——新能源车辆物流运输管理'}
+2020-04-20 10:47:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=650&fno=0> (referer: None)
+2020-04-20 10:47:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=650&fno=0> referred in <None>
+2020-04-20 10:47:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=650>
+{'date': '2019.05.23',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=650&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=650',
+ 'title': '基于SYSWARE的飞行器总体集成设计平台 ——多专业协同，正向研发设计'}
+2020-04-20 10:47:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=640&fno=0> (referer: None)
+2020-04-20 10:47:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=640&fno=0> referred in <None>
+2020-04-20 10:47:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=640>
+{'date': '2019.05.21',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=640&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=640',
+ 'title': '面向有色行业的智能制造运营管理平台 ——基于工业互联网平台的业务优化和模式创新'}
+2020-04-20 10:47:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=782&fno=0> (referer: None)
+2020-04-20 10:47:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=782&fno=0> referred in <None>
+2020-04-20 10:47:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=653&fno=0> (referer: None)
+2020-04-20 10:47:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=653&fno=0> referred in <None>
+2020-04-20 10:47:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=782>
+{'date': '2019.10.18',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=782&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=782',
+ 'title': '某通信管理局典型安全解决方案——工业互联网安全监测与态势感知解决方案'}
+2020-04-20 10:47:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=653>
+{'date': '2019.05.24',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=653&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=653',
+ 'title': '华峰新材料工业互联网平台 ——产业生态 创享未来'}
+2020-04-20 10:47:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=289&fno=0> (referer: None)
+2020-04-20 10:47:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=289&fno=0> referred in <None>
+2020-04-20 10:47:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=289>
+{'date': '2018.03.13',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=289&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=289',
+ 'title': '河北五维航电数字化管理升级 ——特种合金材料零部件数字化协同制造'}
+2020-04-20 10:47:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=651&fno=0> (referer: None)
+2020-04-20 10:47:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=651&fno=0> referred in <None>
+2020-04-20 10:47:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=651>
+{'date': '2019.05.23',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=651&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=651',
+ 'title': 'GETECH格创东智工业互联网平台   ——数字化、智能化工厂转型实践中的应用'}
+2020-04-20 10:47:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=656&fno=0> (referer: None)
+2020-04-20 10:47:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=656&fno=0> referred in <None>
+2020-04-20 10:47:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=656>
+{'date': '2019.05.24',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=656&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=656',
+ 'title': 'LOGIDELTA平台应用案例 ——工业互联赋能传统物流服务效率升级'}
+2020-04-20 10:47:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=823&fno=0> (referer: None)
+2020-04-20 10:47:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=823&fno=0> referred in <None>
+2020-04-20 10:47:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=823>
+{'date': '2019.11.08',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=823&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=823',
+ 'title': '富士康工业互联网BEACON应用技术创新  ——绿色循环的精密智能制造'}
+2020-04-20 10:47:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=781&fno=0> (referer: None)
+2020-04-20 10:47:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=781&fno=0> referred in <None>
+2020-04-20 10:47:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=781>
+{'date': '2019.10.18',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=781&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=781',
+ 'title': '江苏敏捷科技——中车株所工业数据智能安全云平台'}
+2020-04-20 10:47:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=808&fno=0> (referer: None)
+2020-04-20 10:47:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=808&fno=0> referred in <None>
+2020-04-20 10:47:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=808>
+{'date': '2019.11.05',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=808&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=808',
+ 'title': '数控装备工业互联通讯协议(NC-Link)及应用 ——简单高效、自主可控、异构工控设备互联互通'}
+2020-04-20 10:47:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=654&fno=0> (referer: None)
+2020-04-20 10:47:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=654&fno=0> referred in <None>
+2020-04-20 10:47:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=824&fno=0> (referer: None)
+2020-04-20 10:47:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=824&fno=0> referred in <None>
+2020-04-20 10:47:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=654>
+{'date': '2019.05.24',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=654&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=654',
+ 'title': '基于瀚云HanClouds工业互联网平台的 设备智能管理应用 ——快捷、低成本上云和能耗优化'}
+2020-04-20 10:47:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=824>
+{'date': '2019.11.08',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=824&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=824',
+ 'title': '海链加速衣联生态引爆 ——打造用户诚信共享平台'}
+2020-04-20 10:47:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=655&fno=0> (referer: None)
+2020-04-20 10:47:12 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=655&fno=0> referred in <None>
+2020-04-20 10:47:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=655>
+{'date': '2019.05.24',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=655&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=655',
+ 'title': 'WISE-PaaS平台勤昆科技智能工厂案例 ——研华iFactory SRP助力智能化管理'}
+2020-04-20 10:47:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=780&fno=0> (referer: None)
+2020-04-20 10:47:12 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=780&fno=0> referred in <None>
+2020-04-20 10:47:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=780>
+{'date': '2019.10.18',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=780&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=40&id=780',
+ 'title': '国华电力大数据应用案例 火力发电大数据集成应用暨工业互联网示范工程'}
+2020-04-20 10:47:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-04-20 10:47:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 18377,
+ 'downloader/request_count': 51,
+ 'downloader/request_method_count/GET': 51,
+ 'downloader/response_bytes': 32279843,
+ 'downloader/response_count': 51,
+ 'downloader/response_status_count/200': 51,
+ 'file_count': 22,
+ 'file_status_count/downloaded': 22,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 4, 20, 2, 47, 13, 20184),
+ 'item_scraped_count': 22,
+ 'log_count/DEBUG': 96,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 53567488,
+ 'memusage/startup': 53567488,
+ 'request_depth_max': 1,
+ 'response_received_count': 51,
+ 'scheduler/dequeued': 28,
+ 'scheduler/dequeued/memory': 28,
+ 'scheduler/enqueued': 28,
+ 'scheduler/enqueued/memory': 28,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2020, 4, 20, 2, 46, 48, 176066)}
+2020-04-20 10:47:13 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-04-20 10:50:21 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: aii)
+2020-04-20 10:50:21 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.7 (default, Mar 10 2020, 15:43:03) - [Clang 11.0.0 (clang-1100.0.33.17)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-18.7.0-x86_64-i386-64bit
+2020-04-20 10:50:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'aii', 'LOG_FILE': 'log.log', 'NEWSPIDER_MODULE': 'aii.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['aii.spiders']}
+2020-04-20 10:50:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-04-20 10:50:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-04-20 10:50:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-04-20 10:50:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['aii.pipelines.AiiFilesPipeline']
+2020-04-20 10:50:22 [scrapy.core.engine] INFO: Spider opened
+2020-04-20 10:50:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-04-20 10:50:22 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/robots.txt> (referer: None)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1> (referer: None)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=1347> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=1345> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=665> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=667> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=666> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1)
+2020-04-20 10:50:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=664> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=39&page=1)
+2020-04-20 10:50:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=667&fno=0> (referer: None)
+2020-04-20 10:50:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=667&fno=0> referred in <None>
+2020-04-20 10:50:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=667>
+{'date': '2019.05.28',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=667&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=667',
+ 'title': '智能制造安全监测与运营管理平台'}
+2020-04-20 10:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=665&fno=0> (referer: None)
+2020-04-20 10:50:25 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=665&fno=0> referred in <None>
+2020-04-20 10:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1345&fno=0> (referer: None)
+2020-04-20 10:50:25 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1345&fno=0> referred in <None>
+2020-04-20 10:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=665>
+{'date': '2019.05.28',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=665&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=665',
+ 'title': '基于空调云平台的节能控制系统测试床'}
+2020-04-20 10:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=1345>
+{'date': '2020.03.25',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1345&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=1345',
+ 'title': '海尔智能工厂基于SDN+TSN融合网络测试床'}
+2020-04-20 10:50:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=666&fno=0> (referer: None)
+2020-04-20 10:50:25 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=666&fno=0> referred in <None>
+2020-04-20 10:50:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=666>
+{'date': '2019.05.28',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=666&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=666',
+ 'title': '智能电网5G网络及切片应用'}
+2020-04-20 10:50:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1347&fno=0> (referer: None)
+2020-04-20 10:50:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1347&fno=0> referred in <None>
+2020-04-20 10:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=1347>
+{'date': '2020.03.25',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1347&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=1347',
+ 'title': '基于大规模定制的智能+5G验证测试平台'}
+2020-04-20 10:50:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=664&fno=0> (referer: None)
+2020-04-20 10:50:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=664&fno=0> referred in <None>
+2020-04-20 10:50:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=664>
+{'date': '2019.05.28',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=664&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=39&id=664',
+ 'title': '基于5G和人工智能的产品质量实时检测和优化'}
+2020-04-20 10:50:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-04-20 10:50:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4937,
+ 'downloader/request_count': 14,
+ 'downloader/request_method_count/GET': 14,
+ 'downloader/response_bytes': 4577255,
+ 'downloader/response_count': 14,
+ 'downloader/response_status_count/200': 14,
+ 'file_count': 6,
+ 'file_status_count/downloaded': 6,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 4, 20, 2, 50, 26, 863334),
+ 'item_scraped_count': 6,
+ 'log_count/DEBUG': 27,
+ 'log_count/INFO': 7,
+ 'memusage/max': 50860032,
+ 'memusage/startup': 50860032,
+ 'request_depth_max': 1,
+ 'response_received_count': 14,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'start_time': datetime.datetime(2020, 4, 20, 2, 50, 22, 452575)}
+2020-04-20 10:50:26 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-04-20 10:52:44 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: aii)
+2020-04-20 10:52:44 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.7 (default, Mar 10 2020, 15:43:03) - [Clang 11.0.0 (clang-1100.0.33.17)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-18.7.0-x86_64-i386-64bit
+2020-04-20 10:52:44 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'aii', 'LOG_FILE': 'log.log', 'NEWSPIDER_MODULE': 'aii.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['aii.spiders']}
+2020-04-20 10:52:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-04-20 10:52:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-04-20 10:52:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-04-20 10:52:44 [scrapy.middleware] INFO: Enabled item pipelines:
+['aii.pipelines.AiiFilesPipeline']
+2020-04-20 10:52:44 [scrapy.core.engine] INFO: Spider opened
+2020-04-20 10:52:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-04-20 10:52:44 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2020-04-20 10:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/robots.txt> (referer: None)
+2020-04-20 10:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1> (referer: None)
+2020-04-20 10:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2> (referer: None)
+2020-04-20 10:52:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=673> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=698> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=798> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=796> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=726> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=797> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=817> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=795> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=2)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=799> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=800> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=1293> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1)
+2020-04-20 10:52:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=1294> (referer: http://www.aii-alliance.org/index.php?m=content&c=index&a=lists&catid=23&page=1)
+2020-04-20 10:52:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=795&fno=0> (referer: None)
+2020-04-20 10:52:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=795&fno=0> referred in <None>
+2020-04-20 10:52:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=795>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=795&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=795',
+ 'title': '时间敏感网络(TSN)产业发展报告： 网络设备互通测试报告（2019）'}
+2020-04-20 10:52:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=698&fno=0> (referer: None)
+2020-04-20 10:52:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=698&fno=0> referred in <None>
+2020-04-20 10:52:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=698>
+{'date': '2019.06.25',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=698&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=698',
+ 'title': '《工业互联网标识解析二级节点建设导则(试行版)》发布'}
+2020-04-20 10:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=797&fno=0> (referer: None)
+2020-04-20 10:52:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=797&fno=0> referred in <None>
+2020-04-20 10:52:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=797>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=797&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=797',
+ 'title': '工业互联网网络化指标体系(征求意见稿)'}
+2020-04-20 10:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=796&fno=0> (referer: None)
+2020-04-20 10:52:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=796&fno=0> referred in <None>
+2020-04-20 10:52:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=796>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=796&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=796',
+ 'title': '工业PON 2.0白皮书（征求意见稿）'}
+2020-04-20 10:52:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=817&fno=0> (referer: None)
+2020-04-20 10:52:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=817&fno=0> referred in <None>
+2020-04-20 10:52:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=817>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=817&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=817',
+ 'title': '5G 与工业互联网融合应用发展白皮书'}
+2020-04-20 10:52:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=673&fno=0> (referer: None)
+2020-04-20 10:52:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=673&fno=0> referred in <None>
+2020-04-20 10:52:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=673>
+{'date': '2019.06.05',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=673&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=673',
+ 'title': '工业互联网平台白皮书 （2019）'}
+2020-04-20 10:53:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=798&fno=0> (referer: None)
+2020-04-20 10:53:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=798&fno=0> referred in <None>
+2020-04-20 10:53:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=798>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=798&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=798',
+ 'title': '工业互联网园区网络白皮书（征求意见稿）'}
+2020-04-20 10:53:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=799&fno=0> (referer: None)
+2020-04-20 10:53:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=799&fno=0> referred in <None>
+2020-04-20 10:53:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=799>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=799&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=799',
+ 'title': '离散制造业边缘计算解决方案白皮书（征求意见稿）'}
+2020-04-20 10:53:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=800&fno=0> (referer: None)
+2020-04-20 10:53:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=800&fno=0> referred in <None>
+2020-04-20 10:53:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=800>
+{'date': '2019.10.31',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=800&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=800',
+ 'title': '时间敏感网络(TSN)产业白皮书（征求意见稿）'}
+2020-04-20 10:53:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1294&fno=0> (referer: None)
+2020-04-20 10:53:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1294&fno=0> referred in <None>
+2020-04-20 10:53:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=1294>
+{'date': '2020.03.18',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1294&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=1294',
+ 'title': '工业互联网标识解析— 主动标识载体技术白皮书'}
+2020-04-20 10:53:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1293&fno=0> (referer: None)
+2020-04-20 10:53:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1293&fno=0> referred in <None>
+2020-04-20 10:53:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=1293>
+{'date': '2020.03.18',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=1293&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=1293',
+ 'title': '工业互联网标识解析— 安全风险分析模型研究报告'}
+2020-04-20 10:53:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=726&fno=0> (referer: None)
+2020-04-20 10:53:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=726&fno=0> referred in <None>
+2020-04-20 10:53:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=726>
+{'date': '2019.08.09',
+ 'file_urls': ['http://www.aii-alliance.org/index.php?m=content&c=index&a=document_download&ftype=3&fid=726&fno=0'],
+ 'link': 'http://www.aii-alliance.org/index.php?m=content&c=index&a=show&catid=23&id=726',
+ 'title': '中国工业互联网安全态势报告（2018）'}
+2020-04-20 10:53:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-04-20 10:53:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9641,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 28578540,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'file_count': 12,
+ 'file_status_count/downloaded': 12,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 4, 20, 2, 53, 6, 401557),
+ 'item_scraped_count': 12,
+ 'log_count/DEBUG': 52,
+ 'log_count/INFO': 7,
+ 'memusage/max': 50958336,
+ 'memusage/startup': 50958336,
+ 'request_depth_max': 1,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 14,
+ 'scheduler/dequeued/memory': 14,
+ 'scheduler/enqueued': 14,
+ 'scheduler/enqueued/memory': 14,
+ 'start_time': datetime.datetime(2020, 4, 20, 2, 52, 44, 700531)}
+2020-04-20 10:53:06 [scrapy.core.engine] INFO: Spider closed (finished)
