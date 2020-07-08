@@ -3,3 +3,5 @@
 
 **/.idea/*
 /.idea/*
+.ipynb_checkpoints/*
+aii.ipynb
