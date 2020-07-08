@@ -53,9 +53,10 @@ class AiiDuplicateItemPipeline(object):
         self.conn.commit()
         self.conn.close()
 
-        self.logger.info('New added item count is {}'.format(self.new_item_count))
-        self.logger.info('Duplicated item count is {}'.format(self.duplicated_item_count))
-        self.logger.info('Total item count is {}'.format(self.new_item_count + self.duplicated_item_count))
+        self.logger.info("Spider " + spider.name + ' New added item count is {}'.format(self.new_item_count))
+        self.logger.info("Spider " + spider.name + 'Duplicated item count is {}'.format(self.duplicated_item_count))
+        self.logger.info(
+            "Spider " + spider.name + 'Total item count is {}'.format(self.new_item_count + self.duplicated_item_count))
 
     def process_item(self, item, spider):
         url_hash = item['url_hash']
@@ -95,8 +96,11 @@ class AiiFilesPipeline(FilesPipeline):
         file_name = itm['title'] + '-' + itm['date'] + '.pdf'
 
         # remove special file name characters
-        file_name.replace("/", "-")
-        file_name.replace("'", "")
-        file_name.replace('"', '')
+
+        file_name = file_name.replace("/", "")
+        file_name = file_name.replace("'", "")
+        file_name = file_name.replace('"', '')
+        file_name = file_name.replace('|', '-')
+
         file_name = itm['spider'] + '/' + file_name
         return file_name
