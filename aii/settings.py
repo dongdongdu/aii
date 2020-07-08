@@ -16,6 +16,7 @@ NEWSPIDER_MODULE = 'aii.spiders'
 
 LOG_LEVEL = 'INFO'
 LOG_FILE = 'log.log'
+LOG_FORMATTER = 'aii.polite_log_formatter.PoliteLogFormatter'
 
 SQLITE_DB_FILE = 'aii_items.db'
 
