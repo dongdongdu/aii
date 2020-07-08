@@ -13,7 +13,7 @@ BOT_NAME = 'aii'
 
 SPIDER_MODULES = ['aii.spiders']
 NEWSPIDER_MODULE = 'aii.spiders'
-LOG_FILE='log.log'
+LOG_FILE = 'log.log'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'aii (+http://www.yourdomain.com)'
@@ -52,9 +52,12 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'aii.middlewares.AiiDownloaderMiddleware': 543,
-# }
+DOWNLOADER_MIDDLEWARES = {
+    # 'aii.middlewares.AiiDownloaderMiddleware': 543,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 关闭默认方法
+    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,  # 开启
+
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
