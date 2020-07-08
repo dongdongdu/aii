@@ -1,1 +1,1 @@
-scrapy crawl files
+scrapy crawl tech_standards

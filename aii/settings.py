@@ -13,7 +13,11 @@ BOT_NAME = 'aii'
 
 SPIDER_MODULES = ['aii.spiders']
 NEWSPIDER_MODULE = 'aii.spiders'
+
+LOG_LEVEL = 'INFO'
 LOG_FILE = 'log.log'
+
+SQLITE_DB_FILE = 'aii_items.db'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'aii (+http://www.yourdomain.com)'
@@ -52,12 +56,12 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    # 'aii.middlewares.AiiDownloaderMiddleware': 543,
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 关闭默认方法
-    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,  # 开启
+# DOWNLOADER_MIDDLEWARES = {
+# 'aii.middlewares.AiiDownloaderMiddleware': 543,
+# 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 关闭默认方法
+# 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,  # 开启
 
-}
+# }
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -70,8 +74,9 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
     # 'aii.pipelines.AiiPipeline': 300,
     'aii.pipelines.AiiAddSpiderNamePipeline': 501,
+    'aii.pipelines.AiiDuplicateItemPipeline': 502,
     'aii.pipelines.AiiFilesPipeline': 503
-    
+
 }
 FILES_STORE = '/Users/ddu/Downloads/imp'
 
