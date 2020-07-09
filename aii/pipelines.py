@@ -89,7 +89,7 @@ class AiiDuplicateItemPipeline(object):
 
 class AiiFilesPipeline(FilesPipeline):
     def _remove_file_name_special_char(self, input_filename):
-        file_name = input_filename;
+        file_name = input_filename
         file_name = file_name.replace(":", "")
         file_name = file_name.replace("/", "-")
         file_name = file_name.replace("'", "")
