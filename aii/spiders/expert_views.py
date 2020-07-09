@@ -45,6 +45,8 @@ class ExpertViewsSpider(scrapy.Spider):
 
         file_url = Selector(text=body).css('div.news-content > a').xpath('@href').extract()
 
+        itm['content'] = Selector(text=body).css('div.news-content').extract()[0]
+
         if len(file_url) > 0:
             itm['file_urls'] = ['http://www.aii-alliance.org/' + file_url[0]]
         else:

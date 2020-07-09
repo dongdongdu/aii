@@ -20,3 +20,5 @@ class AiiItem(scrapy.Item):
     files = scrapy.Field()
 
     spider = scrapy.Field()
+
+    content = scrapy.Field()
