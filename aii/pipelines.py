@@ -13,6 +13,8 @@ import datetime
 from aii import settings
 from scrapy.exceptions import DropItem
 import logging
+import pypandoc
+import os
 
 
 class AiiAddSpiderNamePipeline(object):
@@ -73,9 +75,10 @@ class AiiDuplicateItemPipeline(object):
                       datetime.datetime.strptime(item['date'], "%Y.%m.%d"),
                       item['link'],
                       str(item['file_urls']),
-                      item['spider'])
+                      item['spider'],
+                      item['content'])
 
-            sql = "INSERT INTO aii_items VALUES (?,?,?,?,?,?)"
+            sql = "INSERT INTO aii_items VALUES (?,?,?,?,?,?,?)"
             self.cursor.execute(sql, values)
             self.conn.commit()
 
@@ -84,6 +87,15 @@ class AiiDuplicateItemPipeline(object):
 
 
 class AiiFilesPipeline(FilesPipeline):
+    def _remove_file_name_special_char(self, input_filename):
+        file_name = input_filename;
+        file_name = file_name.replace(":", "")
+        file_name = file_name.replace("/", "-")
+        file_name = file_name.replace("'", "")
+        file_name = file_name.replace('"', '')
+        file_name = file_name.replace('|', '-')
+        return file_name
+
     def get_media_requests(self, item, info):
         if len(item['file_urls']) > 0:
             for file_url in item['file_urls']:
@@ -91,17 +103,23 @@ class AiiFilesPipeline(FilesPipeline):
         else:
             item['files'] = []
 
+            # Save content html to docx
+            file_name = item['title'] + '-' + item['date'] + '.docx'
+            outputfile = self._remove_file_name_special_char(file_name)
+            outputfile_location = settings.FILES_STORE + '/' + item['spider'] + '/'
+
+            if not os.path.exists(outputfile_location):
+                os.mkdir(outputfile_location)
+                # os.mknod(outputfile, mode=0o777)
+
+            pypandoc.convert_text(item['content'], 'docx', format='html', outputfile=outputfile_location + outputfile)
+
     def file_path(self, request, response=None, info=None):
         itm = request.meta['itm']
         file_name = itm['title'] + '-' + itm['date'] + '.pdf'
 
         # remove special file name characters
-
-        file_name = file_name.replace(":", "")
-        file_name = file_name.replace("/", "")
-        file_name = file_name.replace("'", "")
-        file_name = file_name.replace('"', '')
-        file_name = file_name.replace('|', '-')
+        file_name = self._remove_file_name_special_char(file_name)
 
         file_name = itm['spider'] + '/' + file_name
         return file_name
