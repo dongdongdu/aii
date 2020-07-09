@@ -18,6 +18,10 @@ LOG_LEVEL = 'INFO'
 LOG_FILE = 'log.log'
 LOG_FORMATTER = 'aii.polite_log_formatter.PoliteLogFormatter'
 
+DOWNLOAD_TIMEOUT = 1800
+DOWNLOAD_MAXSIZE = 0
+DOWNLOAD_WARNSIZE = 0
+
 SQLITE_DB_FILE = 'aii_items.db'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
