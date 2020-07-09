@@ -9,3 +9,6 @@ scrapy crawl tech_standards
 
 echo "Start to craw expert views"
 scrapy crawl expert_views
+
+echo "Start to craw test bed cases"
+scrapy crawl test_bed_cases
