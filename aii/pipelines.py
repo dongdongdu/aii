@@ -90,11 +90,13 @@ class AiiDuplicateItemPipeline(object):
 class AiiFilesPipeline(FilesPipeline):
     def _remove_file_name_special_char(self, input_filename):
         file_name = input_filename
-        file_name = file_name.replace(":", "")
-        file_name = file_name.replace("/", "-")
-        file_name = file_name.replace("'", "")
+        file_name = file_name.replace(':', '')
+        file_name = file_name.replace('/', '-')
+        file_name = file_name.replace("'", '')
         file_name = file_name.replace('"', '')
         file_name = file_name.replace('|', '-')
+        file_name = file_name.replace('丨', '-')
+
         return file_name
 
     def get_media_requests(self, item, info):
