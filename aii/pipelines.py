@@ -60,6 +60,8 @@ class AiiDuplicateItemPipeline(object):
         self.logger.info(
             "Spider " + spider.name + ' Total item count is {}'.format(
                 self.new_item_count + self.duplicated_item_count))
+        if (self.new_item_count):
+            print("  Spider {} found new added item {}".format(spider.name, self.new_item_count))
 
     def process_item(self, item, spider):
         url_hash = item['url_hash']
